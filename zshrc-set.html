@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- Chrome, Firefox OS and Opera Status Bar Color -->
+<meta name="theme-color" content="#FFFFFF">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+<link rel="stylesheet" type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+<link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<link rel="stylesheet" type="text/css" href="css/notablog.css">
+<!-- Favicon -->
+
+  <link rel="shortcut icon" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F584479cf-4be3-4df2-b519-aa3c56a607ff%2F79553411.jpeg?table=collection&amp;id=55ed6604-afb3-4d59-b3cd-567a983c20b3">
+
+<style>
+  :root {
+    font-size: 20px;
+  }
+</style>
+  <title>僕のzshrc(設定編)&nbsp;|&nbsp;Yuki Blog</title>
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="僕のzshrc(設定編)">
+  
+  
+  <style>
+    .DateTagBar {
+      margin-top: 1.0rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="Navbar">
+  <a href="index.html">
+    <div class="Navbar__Btn">
+      
+        <span><img class="inline-img-icon" src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F584479cf-4be3-4df2-b519-aa3c56a607ff%2F79553411.jpeg?table=collection&amp;id=55ed6604-afb3-4d59-b3cd-567a983c20b3"></span>&nbsp;
+      
+      <span>Home</span>
+    </div>
+  </a>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</nav>
+  <header class="Header">
+    
+    <div class="Header__Spacer Header__Spacer--NoCover">
+    </div>
+    
+    <h1 class="Header__Title">僕のzshrc(設定編)</h1>
+    
+      <div class="DateTagBar">
+        
+          <span class="DateTagBar__Item DateTagBar__Date">Posted on Wed, Nov 23, 2022</span>
+        
+        
+          <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--gray">
+            <a href="tag/zsh.html">zsh</a>
+          </span>
+        
+          <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--gray">
+            <a href="tag/shell.html">shell</a>
+          </span>
+        
+      </div>
+    
+  </header>
+  <article id="https://www.notion.so/830dcf281a8a42b6b3b12a371c462e0a" class="PageRoot"><div id="https://www.notion.so/fb802f0e98654e4682de40b8f9549342" class="ColorfulBlock ColorfulBlock--BgGray Callout"><div class="Callout__Icon"><div class="Icon">⚠️</div></div><p class="Callout__Content"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">こちらは設定編です．欲しい機能は章ごとに導入することができるので「</strong></span><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://lion-rion.github.io/notablog-starter/zshrc-intro.html"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorBlue"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">僕のzshrc(紹介編)</strong></mark></a></span><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">」でほしいと思った機能を導入してみてください</strong></span></span></p></div><h2 id="https://www.notion.so/9f2bab32586d420c89acd18c0bbec285" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/9f2bab32586d420c89acd18c0bbec285"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">設定編</span></span></h2><h3 id="https://www.notion.so/ec52f202695e4833a7ab04893be182f3" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/ec52f202695e4833a7ab04893be182f3"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Powerlevel10k</strong></span></span></h3><ol class="NumberedListWrapper"><li id="https://www.notion.so/754fa8d00e464c2d837536cb468c74b7" class="NumberedList" value="1"><span class="SemanticStringArray"><span class="SemanticString">まずこのかわいいアイコンたちを表示させるためには適切なフォントが必要です．</span></span></li></ol><div id="https://www.notion.so/bd547edc12264c3b8943f8f005e1e54f" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">以下のサイトからMesloLGフォントをダウンロード・インストールしましょう．自分はRegularを使っています．</span></span></p></div><div id="https://www.notion.so/f27972708cae4cc296d1e9661e3a5b44" class="Bookmark"><a href="https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k"><h5 class="Bookmark__Title">GitHub - romkatv/powerlevel10k: A Zsh theme</h5><p class="Bookmark__Desc">Powerlevel10k is a theme for Zsh. It emphasizes speed, flexibility and out-of-the-box experience. Install the recommended font. Optional but highly recommended. Install Powerlevel10k itself. Restart Zsh with exec zsh. Type p10k configure if the configuration wizard doesn&#x27;t start automatically. Type p10k configure to access the builtin configuration wizard right from your terminal.</p><p class="Bookmark__Link">https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k</p></a></div><div id="https://www.notion.so/7f9448ceb6934e4c9aac69db8acdc037" class="Divider"></div><div id="https://www.notion.so/6044e65aaac64958bc3209396d20673d" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">引用リンクです</span></span></p></div><ul class="BulletedListWrapper"><li id="https://www.notion.so/36c9946850294a76a74a7715d2bc1a38" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf">MesloLGS NF Regular.ttf</a></span></span></li><li id="https://www.notion.so/c35cf17a3a194184b288e53f3efbff83" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf">MesloLGS NF Bold.ttf</a></span></span></li><li id="https://www.notion.so/c26bbefe69694176a7eb9f74ad934e30" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf">MesloLGS NF Italic.ttf</a></span></span></li><li id="https://www.notion.so/e1c518025a924d4cbc9850b91ca3a83c" class="BulletedList"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k:~:text=MesloLGS%20NF%20Bold%20Italic.ttf">MesloLGS NF Bold Italic.ttf</a></span></span></li></ul><div id="https://www.notion.so/5f4ffd66dd314ec79e439d68cc98736e" class="Divider"></div><div id="https://www.notion.so/f030b2f449674ad49d1f286e58a5ec7d" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">2.次はターミナルのフォント設定を変更しましょう．</span></span></p></div><div id="https://www.notion.so/a83979d39fcb4743a69deca85205d3f2" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">ターミナルのメニューから環境設定を選択します。</span></span></p></div><div id="https://www.notion.so/da89c8ce31454a9aab4fcd8f3e22ff6e" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F12f8f416-20d2-4825-ae5f-5b00a755d5ba%2FUntitled.png?width=432&amp;table=block&amp;id=da89c8ce-3145-4a9a-ab4f-cd8f3e22ff6e"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F12f8f416-20d2-4825-ae5f-5b00a755d5ba%2FUntitled.png?width=432&amp;table=block&amp;id=da89c8ce-3145-4a9a-ab4f-cd8f3e22ff6e" style="width:432px"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/0d70a44d814e485da68315c9d28301e0" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">プロファイルのタブからフォントを選択</span></span></p></div><div id="https://www.notion.so/172288cee5714a68aaa8655a31953069" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff74a1bd1-41ea-48c0-8253-16a9a7d9fb3c%2FUntitled.png?width=666&amp;table=block&amp;id=172288ce-e571-4a68-aaa8-655a31953069"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff74a1bd1-41ea-48c0-8253-16a9a7d9fb3c%2FUntitled.png?width=666&amp;table=block&amp;id=172288ce-e571-4a68-aaa8-655a31953069" style="width:666px"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/055376b14c8b4294bb0f0e748732c67d" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">先ほどダウンロードしたフォントに変更しましょう</span></span></p></div><div id="https://www.notion.so/5ef224b803f34aa299d7759724febf80" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7896ddce-2dd2-4eaa-bd7e-83c7f07b5915%2FUntitled.png?width=528&amp;table=block&amp;id=5ef224b8-03f3-4aa2-99d7-759724febf80"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7896ddce-2dd2-4eaa-bd7e-83c7f07b5915%2FUntitled.png?width=528&amp;table=block&amp;id=5ef224b8-03f3-4aa2-99d7-759724febf80" style="width:528px"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/7a2ac29c065a46e48f17e0d4cfd072e5" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">3.フォントの設定は完了なのでターミナルでコマンドを以下の通りに入力してください．
+</span></span></p></div><pre id="https://www.notion.so/1fd7e32a664d4f58ac42f7be477923ca" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>#ホームディレクトリに移動
+cd ~/
+
+#.zshフォルダを作成
+mkdir -p .zsh
+
+#.zshに移動
+cd .zsh
+
+#p10kをクローン
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git
+
+#ホームディレクトリに移動
+cd ~/
+
+#.zshrcに書き込み
+echo &#x27;source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme&#x27; &gt;&gt; ~/.zshrc  
+
+#.zshrc再読み込み
+source .zshrc</span></span></span></code></pre><div id="https://www.notion.so/1cd8e4a9fc7c403293ec8d5f201030eb" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">4.質問が現れるので答えてください．絵が写っているか，どんな見た目にしたいかなどを問われます</span></span></p></div><div id="https://www.notion.so/acfad36250dc4ded83bd0a5761235221" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff2beab47-4c95-4896-9fa0-702260732b3b%2FUntitled.png?width=659&amp;table=block&amp;id=acfad362-50dc-4ded-83bd-0a5761235221"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff2beab47-4c95-4896-9fa0-702260732b3b%2FUntitled.png?width=659&amp;table=block&amp;id=acfad362-50dc-4ded-83bd-0a5761235221" style="width:659px"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><h3 id="https://www.notion.so/5bb97521b33d442c90bab05ab14afd09" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/5bb97521b33d442c90bab05ab14afd09"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">再設定したいという場合</strong></span></span></h3><div id="https://www.notion.so/fcc0ba04d5a349819462e74dfbf21db3" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">ターミナルで以下を入力することでやりなおせます．</span></span></p></div><pre id="https://www.notion.so/48ba8b07138c492eaffd8267b4d34145" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>p10k configure</span></span></span></code></pre><div id="https://www.notion.so/7c567afaee0a4ba385349a0ea5a0e5d0" class="Divider"></div><h3 id="https://www.notion.so/27b9c57873b143e7a18c945c60939460" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/27b9c57873b143e7a18c945c60939460"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">zsh-syntax-highlighting</strong></span></span></h3><div id="https://www.notion.so/011b167a392f4b24b591b0b85ed4c9ee" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">1.ターミナルで以下を実行</span></span></p></div><div id="https://www.notion.so/8a5b424797be43558763192083632410" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">今回はpulginなどを用いず通常インストールします</span></span></p></div><pre id="https://www.notion.so/ea4423a0011542d083d23f6d19246595" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>#ホームディレクトリに移動
+cd ~/
+
+#クローン
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+
+#.zshrcに書き込み
+echo &quot;source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh&quot; &gt;&gt; ${ZDOTDIR:-$HOME}/.zshrc
+
+#zsh-syntax-highlightingの有効化
+source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh</span></span></span></code></pre><h3 id="https://www.notion.so/4ae6ea6811874d8d8d2a09867ab5c5ab" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/4ae6ea6811874d8d8d2a09867ab5c5ab"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">zsh-autosuggestions</strong></span></span></h3><div id="https://www.notion.so/3dcdb01780874922a71eb4d4adffa689" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">以下をターミナルで実行</span></span></p></div><pre id="https://www.notion.so/218055dd831c4dc287a4c4f05b5463e6" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>#.zshフォルダにクローン 
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+
+//.zshrcへの書き込み
+echo &quot;source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh&quot; &gt;&gt; ${ZDOTDIR:-$HOME}/.zshrc
+
+#設定を更新
+source ~/.zshrc</span></span></span></code></pre><h3 id="https://www.notion.so/6955fdd6743846bfaac2843ef5072d2a" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/6955fdd6743846bfaac2843ef5072d2a"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">ccat</strong></span></span></h3><div id="https://www.notion.so/6f19bcc948ef45a080d77e8bb086f21a" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">以下をターミナルで実行</span></span></p></div><pre id="https://www.notion.so/1f4875f90fd14cb1a5d734010994d770" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>#brewでインストール
+brew install ccat</span></span></span></code></pre><div id="https://www.notion.so/160627189d9b4a01911d4b911a5e0ecf" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">2.エイリアスの設定</span></span></p></div><div id="https://www.notion.so/013e2aba3b7949f891d4716e31442667" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">.zshrcに以下を書き込み</span></span></p></div><pre id="https://www.notion.so/9456b1b0f2b746d39f4f82396c6792c3" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>#ccat alias
+#色付きcatコマンド
+alias cat=&#x27;ccat&#x27;</span></span></span></code></pre><div id="https://www.notion.so/35d5135e0bcb403987ef617c52e4c9b2" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">エイリアスを使わない場合は</span><span class="SemanticString"><code class="SemanticString__Fragment SemanticString__Fragment--Code">ccats</code></span><span class="SemanticString">で使えます</span></span></p></div><h3 id="https://www.notion.so/e66add1e8d004173a232675aafcb5eec" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/e66add1e8d004173a232675aafcb5eec"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">exa</strong></span></span></h3><div id="https://www.notion.so/38f6e4f73abb46d48f064addd4b25853" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">1.以下をターミナルで実行</span></span></p></div><pre id="https://www.notion.so/f9ba2701ee1246ada31d4bab5f9dabf5" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>#brewでインストール
+brew install exa</span></span></span></code></pre><div id="https://www.notion.so/5b090a0b97bb4fd1a6f7a06e172ead0d" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">2.エイリアスの設定</span></span></p></div><div id="https://www.notion.so/1bbf43b915f84f959af02c6788a9112a" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">.zshrcに以下を書き込み</span></span></p></div><pre id="https://www.notion.so/5b0fd36347394b5dbe1c80697be3163a" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>#exa alias
+#ディレクトリをツリー表示
+alias tree=&#x27;exa -T&#x27;#色付きlsコマンド
+alias ls=&#x27;exa --icons&#x27;</span></span></span></code></pre><div id="https://www.notion.so/fc64b31b25b441b481d2da6ff70628ce" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">エイリアスを使わない場合は</span><span class="SemanticString"><code class="SemanticString__Fragment SemanticString__Fragment--Code">exa --icons</code></span><span class="SemanticString">などで使えます</span></span></p></div><div id="https://www.notion.so/2c49a4db4b754fbaaa102bd342e36c46" class="Divider"></div><h3 id="https://www.notion.so/76fb8e6ab265497da19cfd74d053cfea" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/76fb8e6ab265497da19cfd74d053cfea"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">grc</strong></span></span></h3><div id="https://www.notion.so/f2a135af5b544e018aab1befc7969548" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">1.以下をターミナルで実行</span></span></p></div><pre id="https://www.notion.so/6f738827b4e24fdc86ff80b52def94f3" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>#brewでインストール
+brew install grc</span></span></span></code></pre><div id="https://www.notion.so/7a2c446e0bfc4d8c938e75417e806439" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">2.エイリアスの設定</span></span></p></div><div id="https://www.notion.so/3c738a47897b4073b1e7e094247ff04c" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">.zshrcに以下を書き込み</span></span></p></div><pre id="https://www.notion.so/fac6b4efe13147c7ad9f381263611bc3" class="Code Code--NoWrap"><code><span class="SemanticStringArray"><span class="SemanticString"><span>#grc alias
+alias ping=&#x27;grc ping&#x27;
+alias ifconfig=&#x27;grc ifconfig&#x27;
+alias make=&#x27;grc make&#x27;</span></span></span></code></pre><div id="https://www.notion.so/3ede90a056b34023b2d196489bbcd447" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">エイリアスを使わない場合は</span><span class="SemanticString"><code class="SemanticString__Fragment SemanticString__Fragment--Code">grc ping</code></span><span class="SemanticString">などで使えます</span></span></p></div><h2 id="https://www.notion.so/e5716824c9f5405a9b09094ee6d49283" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/e5716824c9f5405a9b09094ee6d49283"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Authors</strong></span></span></h2><div id="https://www.notion.so/c62e13be42184d11a34778f7bcce232f" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://github.com/lion-rion">@Lion</a></span></span></p></div></article>
+  <footer class="Footer">
+  <div>&copy; Yuki Blog 2022</div>
+  <div>&centerdot;</div>
+  <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+      rel="noopener noreferrer">Notablog</a>.
+  </div>
+</footer>
+</body>
+
+</html>

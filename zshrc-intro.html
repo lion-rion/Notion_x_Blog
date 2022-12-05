@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- Chrome, Firefox OS and Opera Status Bar Color -->
+<meta name="theme-color" content="#FFFFFF">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+<link rel="stylesheet" type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+<link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<link rel="stylesheet" type="text/css" href="css/notablog.css">
+<!-- Favicon -->
+
+  <link rel="shortcut icon" href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F584479cf-4be3-4df2-b519-aa3c56a607ff%2F79553411.jpeg?table=collection&amp;id=55ed6604-afb3-4d59-b3cd-567a983c20b3">
+
+<style>
+  :root {
+    font-size: 20px;
+  }
+</style>
+  <title>僕のzshrc(紹介編)&nbsp;|&nbsp;Yuki Blog</title>
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="僕のzshrc(紹介編)">
+  
+  
+  <style>
+    .DateTagBar {
+      margin-top: 1.0rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="Navbar">
+  <a href="index.html">
+    <div class="Navbar__Btn">
+      
+        <span><img class="inline-img-icon" src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F584479cf-4be3-4df2-b519-aa3c56a607ff%2F79553411.jpeg?table=collection&amp;id=55ed6604-afb3-4d59-b3cd-567a983c20b3"></span>&nbsp;
+      
+      <span>Home</span>
+    </div>
+  </a>
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</nav>
+  <header class="Header">
+    
+    <div class="Header__Spacer Header__Spacer--NoCover">
+    </div>
+    
+    <h1 class="Header__Title">僕のzshrc(紹介編)</h1>
+    
+      <div class="DateTagBar">
+        
+          <span class="DateTagBar__Item DateTagBar__Date">Posted on Tue, Nov 22, 2022</span>
+        
+        
+          <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--gray">
+            <a href="tag/zsh.html">zsh</a>
+          </span>
+        
+          <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--gray">
+            <a href="tag/shell.html">shell</a>
+          </span>
+        
+      </div>
+    
+  </header>
+  <article id="https://www.notion.so/6caaafb63bac4670ad60ba5c30456598" class="PageRoot"><h2 id="https://www.notion.so/0fb9b080b8f74691bde407406abc875d" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/0fb9b080b8f74691bde407406abc875d"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString">zshrc</span></span></h2><div id="https://www.notion.so/336e1fd45fd543df9b92af228f0cc0d9" class="ColorfulBlock ColorfulBlock--BgGray Callout"><div class="Callout__Icon"><div class="Icon">✏️</div></div><p class="Callout__Content"><span class="SemanticStringArray"><span class="SemanticString">書いた理由
+・僕のzshはやっぱりかっこいいし便利だなあ〜…
+ということで僕の最強zshrcを紹介します!!!</span></span></p></div><div id="https://www.notion.so/b86e9b989a044b70869e521ce70b667e" class="ColorfulBlock ColorfulBlock--BgGray Callout"><div class="Callout__Icon"><div class="Icon">📌</div></div><p class="Callout__Content"><span class="SemanticStringArray"><span class="SemanticString">SETUP</span></span><div id="https://www.notion.so/433af53dca4a4d5a86953a56115d00be" class="ColorfulBlock ColorfulBlock--BgGray Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">ほしいと思った機能は「</strong></span><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold"><mark class="SemanticString__Fragment SemanticString__Fragment--HighlightedColor SemanticString__Fragment--ColorBlue"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://lion-rion.github.io/notablog-starter/zshrc-set.html">僕のzshrc(設定編)</a></mark></strong></span><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">」から設定方法を見れます.</strong></span></span></p></div></p></div><div id="https://www.notion.so/95bd75adfe734be195af1744e55f81da" class="Divider"></div><div id="https://www.notion.so/08e2f8c948a54bafacab0ef23bf9420b" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F651dbe92-396e-4e13-9156-1ef271e6bf9d%2FUntitled.png?width=1126&amp;table=block&amp;id=08e2f8c9-48a5-4baf-acab-0ef23bf9420b"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F651dbe92-396e-4e13-9156-1ef271e6bf9d%2FUntitled.png?width=1126&amp;table=block&amp;id=08e2f8c9-48a5-4baf-acab-0ef23bf9420b" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/129cdea91f0545908f75f4a9ed43e4d7" class="Divider"></div><h3 id="https://www.notion.so/2aa3704f1839432aa3d0bec0875df7a7" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/2aa3704f1839432aa3d0bec0875df7a7"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Powerlevel10k</strong></span></span></h3><div id="https://www.notion.so/1cce0aca67c44d90a040499aa5252f33" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">全体的に表示が可愛くなるので見やすく，効率も上がります．Githubのステータス表示から言語のバージョン情報や実行時間などいろいろ表示してくれるので便利です．</span></span></p></div><div id="https://www.notion.so/27aef5bb18c74188bf87bd594d4cc484" class="Divider"></div><div id="https://www.notion.so/825c99a3825942019bef6919b92f4746" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F73d29d35-24e8-4cd3-b53a-cb21521977b2%2FUntitled.png?width=1110&amp;table=block&amp;id=825c99a3-8259-4201-9bef-6919b92f4746"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F73d29d35-24e8-4cd3-b53a-cb21521977b2%2FUntitled.png?width=1110&amp;table=block&amp;id=825c99a3-8259-4201-9bef-6919b92f4746" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/bac6b8df8c8c4f768a9c74f9ae8a2578" class="Divider"></div><h3 id="https://www.notion.so/cf6d476730f84458b30487db7dfa7b4c" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/cf6d476730f84458b30487db7dfa7b4c"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">zsh-syntax-highlighting</strong></span></span></h3><div id="https://www.notion.so/6fed683175444653aa434d8f0f6cbc27" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">存在しているコマンドであれば緑色に光ります．間違っていると赤色に光るのでわかりやすいですね！</span></span></p></div><div id="https://www.notion.so/06e95fbe3fcf4e2fa7587dc878dc79a7" class="Divider"></div><div id="https://www.notion.so/dd0220572031423b99d9a868211a7217" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F83d96838-a898-4b04-a5d2-f4f65e559f5e%2FUntitled.png?width=624&amp;table=block&amp;id=dd022057-2031-423b-99d9-a868211a7217"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F83d96838-a898-4b04-a5d2-f4f65e559f5e%2FUntitled.png?width=624&amp;table=block&amp;id=dd022057-2031-423b-99d9-a868211a7217" style="width:624px"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/e778912ffcd8428d99cbf2c4e0c0d056" class="Divider"></div><h3 id="https://www.notion.so/434ec71f95f342e6a189ba6de26ede7a" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/434ec71f95f342e6a189ba6de26ede7a"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">zsh-autosuggestions</strong></span></span></h3><div id="https://www.notion.so/e9ff397e6d5640f5b3514be1e59b04b4" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">過去の入力からサジェスト表示してくれます．コマンドを↑で遡るもの面倒だけど打つのも面倒...ってときに超有能です</span></span></p></div><div id="https://www.notion.so/91f523354cc64b768ed889f395a871ba" class="Divider"></div><div id="https://www.notion.so/39914e858baf4365a1db1e8b31540b54" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa41a203d-d9ee-462e-a86e-52bd904f5acb%2FUntitled.png?width=1770&amp;table=block&amp;id=39914e85-8baf-4365-a1db-1e8b31540b54"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa41a203d-d9ee-462e-a86e-52bd904f5acb%2FUntitled.png?width=1770&amp;table=block&amp;id=39914e85-8baf-4365-a1db-1e8b31540b54" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/29ea357fe32540429d3e4603603f2c61" class="Divider"></div><h3 id="https://www.notion.so/85e5dd216f9f486f8246bd69e2f7d447" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/85e5dd216f9f486f8246bd69e2f7d447"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">ccat</strong></span></span></h3><div id="https://www.notion.so/1b853a1828254f769091a35c92e3941b" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">catコマンドの結果に色を付けてくれます</span></span></p></div><div id="https://www.notion.so/24e5719478fb4ac2bfc9154561a324d9" class="Divider"></div><div id="https://www.notion.so/d5552f8d942a47a0b3b60600ec5c7de9" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc3376d1a-9456-4698-a744-51bf5718fc51%2FUntitled.png?width=1134&amp;table=block&amp;id=d5552f8d-942a-47a0-b3b6-0600ec5c7de9"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc3376d1a-9456-4698-a744-51bf5718fc51%2FUntitled.png?width=1134&amp;table=block&amp;id=d5552f8d-942a-47a0-b3b6-0600ec5c7de9" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/768308935ddb45398aa1b60c4ca641a3" class="Divider"></div><h3 id="https://www.notion.so/b3bc4a0bfeb24940986183cc41c31126" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/b3bc4a0bfeb24940986183cc41c31126"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">exa</strong></span></span></h3><div id="https://www.notion.so/a9d635aceebf4a99a170d30fcebbb027" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">lsの結果にアイコンを付けてくれて，色付けもしてくれるのでディレクトリかファイルかの見分けが楽になります． Goはしっかりgopherくんになるところもポイント高いですね :)</span></span></p></div><div id="https://www.notion.so/840fc744212d4367afdcc916474c5ec0" class="Divider"></div><div id="https://www.notion.so/a786842363e141bb93a94b7a385e8ade" class="Image Image--Normal"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3d90ab24-44ea-46f3-80ea-17e0438e576b%2FUntitled.png?width=416&amp;table=block&amp;id=a7868423-63e1-41bb-93a9-4b7a385e8ade"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3d90ab24-44ea-46f3-80ea-17e0438e576b%2FUntitled.png?width=416&amp;table=block&amp;id=a7868423-63e1-41bb-93a9-4b7a385e8ade" style="width:416px"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/ded3bf963239417190210f7f32fbc233" class="Divider"></div><h3 id="https://www.notion.so/f308f766c0ad46ca93d401764222957e" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--3"><a class="Anchor" href="#https://www.notion.so/f308f766c0ad46ca93d401764222957e"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">grc</strong></span></span></h3><div id="https://www.notion.so/0081e19e10a44c74913e808fec74a2a2" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString">いろんなものを色付けしてくれるものです．自分はifconfig，ping，makeあたりを色付けしています</span></span></p></div><div id="https://www.notion.so/3ea49019bb054a74883be59122b36122" class="Divider"></div><div id="https://www.notion.so/feb07176d231493b832fcbb0bd4c287b" class="Image Image--PageWidth"><figure><a href="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9613e377-0797-4ede-9174-2cfb45200895%2FUntitled.png?width=1434&amp;table=block&amp;id=feb07176-d231-493b-832f-cbb0bd4c287b"><img src="https://www.notion.so/signed/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9613e377-0797-4ede-9174-2cfb45200895%2FUntitled.png?width=1434&amp;table=block&amp;id=feb07176-d231-493b-832f-cbb0bd4c287b" style="width:100%"/></a><figcaption><span class="SemanticStringArray"></span></figcaption></figure></div><div id="https://www.notion.so/a2593669a84a4d948be3f52d4c01b1ed" class="Divider"></div><h2 id="https://www.notion.so/76543a17fb2e44f4a1a7c2f7a2f1f656" class="ColorfulBlock ColorfulBlock--ColorDefault Heading Heading--2"><a class="Anchor" href="#https://www.notion.so/76543a17fb2e44f4a1a7c2f7a2f1f656"><svg width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><span class="SemanticStringArray"><span class="SemanticString"><strong class="SemanticString__Fragment SemanticString__Fragment--Bold">Authors</strong></span></span></h2><div id="https://www.notion.so/69ba27d427254ec6ac72d241e5ef9abb" class="ColorfulBlock ColorfulBlock--ColorDefault Text"><p class="Text__Content"><span class="SemanticStringArray"><span class="SemanticString"><a class="SemanticString__Fragment SemanticString__Fragment--Link" href="https://github.com/lion-rion">@Lion</a></span></span></p></div></article>
+  <footer class="Footer">
+  <div>&copy; Yuki Blog 2022</div>
+  <div>&centerdot;</div>
+  <div>Powered by <a href="https://github.com/dragonman225/notablog" target="_blank"
+      rel="noopener noreferrer">Notablog</a>.
+  </div>
+</footer>
+</body>
+
+</html>
