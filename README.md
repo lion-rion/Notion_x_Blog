@@ -22,3 +22,5 @@
 使い方に関しては以下のリポジトリのREADMEを参照してください
 
 https://github.com/dragonman225/notablog-starter
+
+powerd by notablog
